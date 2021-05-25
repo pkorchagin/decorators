@@ -1,0 +1,43 @@
+{
+  "name": "decorators",
+  "version": "1.0.1",
+  "description": "Decorating in typescript",
+  "main": "src/index.ts",
+  "repository": "https://github.com/pkorchagin/decorators.git",
+  "author": "Philip <korchagin.philip@gmail.com>",
+  "homepage": "https://typescript.pp.ua",
+  "license": "UNLICENSED",
+  "keywords": [
+    "typescript",
+    "decorator",
+    "decorators",
+    "metadata",
+    "typescript.pp.ua"
+  ],
+  "scripts": {
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "build": "tsc",
+    "start": "nodemon -e ts --exec 'ts-node' src/index.ts",
+    "start:composition": "SAMPLE='COMPOSITION' nodemon -e ts --exec 'ts-node' src/index.ts",
+    "start:class": "SAMPLE='CLASS' nodemon -e ts --exec 'ts-node' src/index.ts",
+    "start:method": "SAMPLE='METHOD' nodemon -e ts --exec 'ts-node' src/index.ts",
+    "start:parameter": "SAMPLE='PARAMETER' nodemon -e ts --exec 'ts-node' src/index.ts",
+    "start:accessor": "SAMPLE='ACCESSOR' nodemon -e ts --exec 'ts-node' src/index.ts",
+    "start:property": "SAMPLE='PROPERTY' nodemon -e ts --exec 'ts-node' src/index.ts",
+    "start:metadata": "SAMPLE='METADATA' nodemon -e ts --exec 'ts-node' src/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^15.6.1",
+    "@typescript-eslint/eslint-plugin": "^4.25.0",
+    "@typescript-eslint/parser": "^4.25.0",
+    "eslint": "^7.27.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.3.0",
+    "reflect-metadata": "^0.1.13",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {}
+}
